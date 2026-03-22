@@ -1,0 +1,7 @@
+log_level = "info"
+database_host = "localhost"
+database_port = 5432
+database_name = "rustwebdev"
+database_user = "postgres"
+database_password = "1qaz!QAZ"
+port = 8080
