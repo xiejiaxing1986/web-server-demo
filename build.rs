@@ -2,9 +2,8 @@ use std::{borrow::Cow, process::Command};
 
 /// Generate the `cargo:` key output
 pub fn generate_cargo_keys() {
-    //window环境：git.exe linux/macos环境：git
-    // let git_cmd = if cfg!(windows) {"git.exe"} else {"git"};
-    let output = Command::new("git.exe")
+
+    let output = Command::new("git")
         .args(&["rev-parse", "--short", "HEAD"])
         .output();
 
