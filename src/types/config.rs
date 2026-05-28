@@ -7,7 +7,7 @@ use std::env;
 #[derive(Parser, Debug, Default, Deserialize, PartialEq)]
 #[clap(author, version, about, long_about = None)]
 pub struct Config {
-    #[clap(short, long, default_value = "warn")]
+    #[clap(short, long, default_value = "info")]
     pub log_level: String,
     #[clap(long, default_value = "localhost")]
     pub db_host: String,
