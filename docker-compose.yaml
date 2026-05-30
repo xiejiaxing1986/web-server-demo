@@ -3,17 +3,17 @@ services:
     image: postgres:15
     restart: always
     env_file:
-      - .env
+    - .env
     volumes:
-      - data:/var/lib/postgresql/data
+    - pg-data:/var/lib/postgresql/data
   server:
     build: .
     restart: always
     env_file:
-      - .env
+    - .env
     depends_on:
-      - database
+    - database
     ports:
     - "8080:8080"
 volumes:
-  data:
+  pg-data:
