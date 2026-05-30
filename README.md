@@ -1,1 +1,1 @@
-##web demo based on warp, rust, copy from <<web development>>##
+web demo based on warp, rust
